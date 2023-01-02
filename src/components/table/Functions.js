@@ -1,35 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
 import {useAsyncDebounce} from "react-table";
 import { classNames } from "./shared/Utils";
 
 // Define a default UI for filtering
-function GlobalFilter({
-    preGlobalFilteredRows,
-    globalFilter,
-    setGlobalFilter
-}) {
-    const count = preGlobalFilteredRows.length;
-    const [value, setValue] = React.useState(globalFilter);
-    const onChange = useAsyncDebounce((value) => {
-        setGlobalFilter(value || undefined);
-    }, 200);
+// function GlobalFilter({
+//     preGlobalFilteredRows,
+//     globalFilter,
+//     setGlobalFilter
+// }) {
+//     const count = preGlobalFilteredRows.length;
+//     const [value, setValue] = React.useState(globalFilter);
+//     const onChange = useAsyncDebounce((value) => {
+//         setGlobalFilter(value || undefined);
+//     }, 200);
 
-    return (
-        <label className="flex gap-x-2 items-baseline">
-            <span className="text-gray-700">Search: </span>
-            <input
-                type="text"
-                class="mt-1 block rounded-md border-gray-300 shadow-sm focus:border-teal-300 focus:ring focus:ring-teal-200 focus:ring-opacity-50"
-                value={value || ""}
-                onChange={(e) => {
-                    setValue(e.target.value);
-                    onChange(e.target.value);
-                }}
-                placeholder={`${count} records...`}
-            />
-        </label>
-    );
-}
+//     return (
+//         <label className="flex gap-x-2 items-baseline">
+//             <span className="text-gray-700">Search: </span>
+//             <input
+//                 type="text"
+//                 class="mt-1 block rounded-md border-gray-300 shadow-sm focus:border-teal-300 focus:ring focus:ring-teal-200 focus:ring-opacity-50"
+//                 value={value || ""}
+//                 onChange={(e) => {
+//                     setValue(e.target.value);
+//                     onChange(e.target.value);
+//                 }}
+//                 placeholder={`${count} records...`}
+//             />
+//         </label>
+//     );
+// }
 
 // This is a custom filter UI for selecting
 // a unique option from a list

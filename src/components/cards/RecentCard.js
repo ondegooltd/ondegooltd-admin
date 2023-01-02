@@ -63,7 +63,7 @@ const RecentCard = () => {
                             </div>
                             <p className="text-gray-600 dark:text-gray-100 text-sm font-medium pl-3">Invoice generated</p>
                         </div>
-                        <a href="javascript:void(0)">
+                        <a href="/d">
                             <p className="text-sm font-medium cursor-pointer text-indigo-500">View</p>
                         </a>
                     </div>

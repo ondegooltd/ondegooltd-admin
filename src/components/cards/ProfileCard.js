@@ -64,7 +64,7 @@ const ProfileCard = () => {
                                 </div>
                             </div>
                             <div className="w-full lg:w-1/3 flex-col flex justify-center items-center px-12 py-8">
-                                <h2 className="text-center text-2xl text-gray-800 dark:text-gray-100 font-medium tracking-normal"></h2>
+                                <h2 className="text-center text-2xl text-gray-800 dark:text-gray-100 font-medium tracking-normal">.</h2>
                                 <h2 className="text-center text-sm text-gray-600 dark:text-gray-100 font-normal mt-2 mb-4 tracking-normal">Hourly Rate</h2>
                                 <h2 className="text-center text-2xl text-gray-800 dark:text-gray-100 font-medium tracking-normal">,000</h2>
                                 <h2 className="text-center text-sm text-gray-600 dark:text-gray-100 font-normal mt-2 mb-4 tracking-normal">Total Earned</h2>

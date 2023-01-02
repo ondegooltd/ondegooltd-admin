@@ -3,7 +3,7 @@ import AnalyticCardOne from '../../components/cards/AnalyticCardOne'
 import RecentCard from '../../components/cards/RecentCard'
 
 const Dashboard = () => {
-    const [loading, setLoading] = useState(false)
+    // const [loading, setLoading] = useState(false)
     // const 
     return (
         <div className='px-8 py-4'>

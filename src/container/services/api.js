@@ -6,10 +6,8 @@ export const Auth = {
     signin: async (data) => {
         console.log(data)
         return await axios.post('https://ondegooltd.cyclic.app/v1/auth/signin', data).then((res) => {
-            // console.log(res.data)
             return res.data
-        }
-        ).catch((err) => console.log(err))
+        }).catch((err) => console.log(err))
     },
     signup: async (data) => {
         return await axios.post('https://ondegooltd.cyclic.app/v1/auth/signup', data).then((res) => { return res.data }).catch((err) => err)

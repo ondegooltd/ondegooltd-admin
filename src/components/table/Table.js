@@ -2,7 +2,7 @@ import React from "react";
 import {
     useTable,
     useGlobalFilter,
-    useAsyncDebounce,
+    // useAsyncDebounce,
     useFilters,
     useSortBy,
     usePagination
@@ -15,7 +15,7 @@ import {
 } from "@heroicons/react/solid";
 import { Button, PageButton } from "./shared/Button";
 import { SortDownIcon, SortUpIcon, SortIcon } from "./shared/Icon";
-import { classNames } from "./shared/Utils";
+// import { classNames } from "./shared/Utils";
 
 const Table = ({ columns, data }) => {
     // Use the state and functions returned from useTable to build your UI
@@ -34,8 +34,8 @@ const Table = ({ columns, data }) => {
         previousPage,
         setPageSize,
         state,
-        preGlobalFilteredRows,
-        setGlobalFilter
+        // preGlobalFilteredRows,
+        // setGlobalFilter
     } = useTable(
         {
             columns,

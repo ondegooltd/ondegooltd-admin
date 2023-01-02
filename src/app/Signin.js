@@ -8,7 +8,7 @@ const Signin = () => {
         contact: '',
         password: '',
     })
-    const [error, setError] = useState(null)
+    // const [error, setError] = useState(null)
     const [loading, setLoading] = useState(false)
     const [show, setShow] = useState(false)
     const navigate = useNavigate()
@@ -27,6 +27,7 @@ const Signin = () => {
         setUser(data.user)
         setToken(data.tokens.accessToken)
         setRefreshToken(data.tokens.refreshToken)
+        console.log(loading)
         navigate('/d')
     }
 

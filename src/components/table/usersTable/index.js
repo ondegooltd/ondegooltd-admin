@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "../Table";
-import { classNames } from "../shared/Utils";
+// import { classNames } from "../shared/Utils";
 import { SelectColumnFilter, StatusPill } from '../Functions'
 
 const getData = () => [
