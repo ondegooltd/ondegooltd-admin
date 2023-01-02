@@ -85,7 +85,7 @@ const Table = ({ columns, data }) => {
             </div>
             <div className="mt-2 flex flex-col">
                 <div className="-my-2 overflow-x-auto -mx-4 sm:-mx-6 lg:-mx-8">
-                    <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                    <div className="py-2 align-middle inline-block min-w-full border sm:px-6 lg:px-8">
                         <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
                             <table
                                 {...getTableProps()}
@@ -137,7 +137,7 @@ const Table = ({ columns, data }) => {
                                                     return (
                                                         <td
                                                             {...cell.getCellProps()}
-                                                            className="px-6 py-4 whitespace-nowrap"
+                                                            className="px-6 py-4 text-sm whitespace-nowrap"
                                                         >
                                                             {cell.render("Cell")}
                                                         </td>
